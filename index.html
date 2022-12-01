@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/script.js" defer></script>
+    
+</head>
+<body>
+    <div class="todo-container">
+            <header>
+                <h1>Lista de Tarefas</h1>
+            </header>
+
+            <div id="first-step" class="">
+                <div id="img-container">
+                    <img src="img/fantasma2.png" alt="logo">
+                    <div class="shadow"></div>
+                </div>
+        
+                <div class="btn-container">
+                    <form id="btn-add">
+                        <button class="btn-plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </form>
+                </div>    
+            </div>
+
+            <div id="second-step" class="hide">
+                    <form id="todo-form">
+                        <p>Adicione a sua tarefa</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                            <button type="submit" class="btns-todo">
+                                <i class="fa-thin fa-plus"></i>
+                            </button>
+                        </div>
+                    </form>    
+            
+                    <form id="edit-form" class="hide">
+                        <p>Edite a sua tarefa:</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input">
+                            <button type="submit" class="btns-todo"> 
+                                <i class="fa-solid fa-check-double"></i>
+                            </button>
+                            <button id="cancel-btn" class="btns-todo">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </form>
+            
+                    <div id="todo-list">
+                  
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
